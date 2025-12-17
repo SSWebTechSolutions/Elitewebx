@@ -362,26 +362,27 @@
 <!-- end -->
 
 
- <!-- contact section starts  -->
+  <!-- contact section starts  -->
 
 <section class="contact" id="contact">
 
     <h1 class="heading"> <span>contact</span> us </h1>
 
-    <form action="" data-aos="zoom">
+    <form action="https://api.web3forms.com/submit" method="POST" data-aos="zoom" >
+        <input type="hidden" name="access_key" value="217be8ad-701e-4d49-91f4-0635c3d47921">
 
         <div class="inputBox">
-            <input type="text" placeholder="Full name" data-aos="fade-up">
-            <input type="email" placeholder="email" data-aos="fade-up">
+            <input type="text" name="Full name" required placeholder="Full name" data-aos="fade-up">
+            <input type="email" name="name" required placeholder="email" data-aos="fade-up">
         </div>
 
         <div class="inputBox">
-            <input type="number" placeholder="Phone number" data-aos="fade-up">
-            <input type="text"  name="datetimes"  data-aos="fade-up">
+            <input type="number" name="Phone number" required placeholder="Phone number" data-aos="fade-up">
+            <input type="text"  name="datetimes" required data-aos="fade-up">
         </div>
 
         <div class="inputBox">
-            <input type="text" placeholder="Your address" data-aos="fade-up">
+            <input type="text" name="Address" required placeholder="Your address" data-aos="fade-up">
             <select name="plan" data-aos="fade-up">
                <option value="basic">basic plan</option>
                <option value="premium">premium plan</option>
@@ -389,9 +390,9 @@
             </select>
         </div>
 
-        <textarea name="" placeholder="Your message" id="" cols="30" rows="10" data-aos="fade-up"></textarea>
+        <textarea name="message" placeholder="Your message" required id="" cols="30" rows="10" data-aos="fade-up"></textarea>
         
-        <a href="#" class="btn">Send message</a>
+        <button class="btn">Send message</button>
 
     </form>
 
